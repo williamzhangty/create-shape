@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shape Factory</title>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="./assets/script/index.js" defer"></script>
+    </head>
+
+    <body>
+        <div class="container center">
+            <div>
+                <p class="title">Shape factory</p>
+                <div class="controls">
+                    <select id="shapeType">
+                        <option value="" selected disabled>Shape</option>
+                        <option value="circle">Circle</option>
+                        <option value="square">Square</option>
+                    </select>
+
+                    <select id="color" name="color">
+                        <option value="" selected disabled>Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="orange">Orange</option>
+                        <option value="pink">Pink</option>
+                        <option value="purple">Purple</option>
+                    </select>
+
+                    <button onclick="createShape()">Create</button>
+                </div>
+                <div id="shapeContainer" class="grid"></div>
+                <div id="shapeInfo">Select shape and color to start</div>
+            </div>
+        </div>
+    </body>
+</html>

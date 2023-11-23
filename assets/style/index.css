@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", "Open Sans", Arial, sans-serif;
+    color: #f4f5ff;
+    background-color: #000;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline:auto;
+}
+
+.center {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: #222;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.shape {
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.shape:active {
+    transform: scale(0.9);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 5px;
+}
+
+.blue { background-color: #09f; }
+.green { background-color: #9f0; }
+.orange { background-color: #f90; }
+.pink { background-color: #f09; }
+.purple { background-color: #90f; }
+
+select, button {
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+select {
+    width: 36%;
+    height: 35px;
+    background-color: #222;
+}
+
+select {
+    -webkit-appearance: none; /* Removes the default arrow for WebKit browsers like Chrome and Safari */
+    -moz-appearance: none; /* Removes the default arrow for Firefox */
+    appearance: none; /* Standard property, but not fully supported yet */
+    background-image: url('path_to_custom_arrow_image'); /* Optional: Add your own arrow as a background image */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the custom arrow */
+    /* Other styles (border, padding, etc.) */
+}
+
+button {
+    width: 21%;
+}
+
+button {
+    background-color: #f90;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fb0;
+}
+
+#shapeInfo {
+    height: 30px;
+    margin-top: 20px;
+}
